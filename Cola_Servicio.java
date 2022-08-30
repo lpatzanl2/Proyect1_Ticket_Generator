@@ -19,7 +19,7 @@ abstract class Cola_Servicio {
      */
     public void dameeeee(){
         for(Tickets e: ticketitos){
-            System.out.print(e.show_me_all_data());
+            System.out.print(e.toString());
         };
     }
 

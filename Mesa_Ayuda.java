@@ -1,4 +1,6 @@
 package Ticket_Request;
+import ProjectTicket.Ticket;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -17,18 +19,14 @@ public class Mesa_Ayuda extends Cola_Servicio {
     /**
      * Cola
      */
-    Queue<Tickets> colaMesaAyuda = new LinkedList<>();
+    Queue<Object> queueMesaAyuda = new LinkedList<>();
 
-
-    /**
-     * Imprimimos cola
-     */
-    public void dameMesaApoyo(){
-        for(Tickets e: colaMesaAyuda){
-            System.out.print(e);
-        };
+    public void rellenarMesaAyuda(Tickets tickets){
+        queueMesaAyuda.add(tickets);
     }
-
+    public String showMequeueMesaAyuda() {
+        return " " + queueMesaAyuda;
+    }
 }
 
 
